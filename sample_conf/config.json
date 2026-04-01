@@ -85,6 +85,19 @@
 		}
 	},
 	
+	"oidc": {
+		"enabled": false,
+		"issuer": "https://keycloak.something.url/realms/gumaccount",
+		"client_id": "cronicle",
+		"client_secret": "CHANGE_ME",
+		"callback_url": "http://localhost:3012/oidc/callback",
+		"base_url": "http://localhost:3012",
+		"scope": "openid profile email",
+		"admin_roles": ["cronicle-admin"],
+		"https_verify": true,
+		"cookie_max_age": 86400
+	},
+
 	"WebServer": {
 		"http_port": 3012,
 		"http_htdocs_dir": "htdocs",
